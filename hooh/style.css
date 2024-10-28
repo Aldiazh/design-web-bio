@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.navigasi {
+    background-color: #9979d1;
+    width: 100%;
+    height: 70px;
+    color: white;
+    position: fixed;
+}
+
+
+.logo {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+
+.menu {
+    margin-left: 1000px;
+    padding-top: 27px;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+/*Pseudo-classes untuk memberi efek hover pada menu*/
+.menu ul li a:hover {
+    color: 	#c1a4db;
+    font-style: bold;
+}
+
+.banner {
+    background-color: #ae91dd;
+    height: 600px;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    font-weight: bold;
+
+
+& > img{
+    border-radius: 100px;
+    height:  200px;
+    width: 210px;
+    border: 6px solid white;
+    margin-top: 100px;
+
+
+& > banner h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+}
+}
+
+
+.banner button {
+    margin-top: 60px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+    color: #9979d1;
+    font-weight: bold;
+}
+
+
+/*Pseudo-classes untuk memberi efek hover pada button banner*/
+.banner button:hover {
+    background-color: #ae91dd;
+    border: 1px solid white;
+    color: white;
+}
+
+/*Pseudo-element untuk memberi tampilan pop-up pada h1*/
+h1 span::before {
+    content: '';
+    animation: gerak infinite 4s ease;
+    transform: translateY(-50);
+    color:	#8161bc;
+    font-size: 70px;
+}
+
+@keyframes gerak {
+    0% {
+        content: 'Achmad';
+    }    
+    50% {
+        content: 'Achmad Azhar';
+    }
+    100% {
+        content: 'Achmad Azhar Aldiansyah';
+    }
+}
+
+
+.box-pendidikan {
+    text-align: center;
+    color: rgb(90, 89, 91);
+    margin-top: 50px;
+    align-content: center;
+}
+
+.box-kiri, .box-tengah, .box-kanan {
+    width: 300px;
+    height: 320px;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 70px 20px 20px 55px;
+    float: left;
+    padding: 30px 60px;
+    text-decoration: none;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ;
+}
+
+.box-kiri:hover,
+.box-kiri:focus,
+.box-kiri:active{
+    color: rgb(173, 20, 20);
+    border-color:  rgb(173, 20, 20);
+    transform: scale(1.05);
+}
+.box-tengah:active,
+.box-tengah:focus,
+.box-tengah:hover{
+    color: #2358aa;
+    border-color: #2358aa;
+    transform: scale(1.05);
+}
+.box-kanan:hover,
+.box-kanan:focus,
+.box-kanan:active {
+    color: 	#75b9ea;
+    border-color: 	#75b9ea;
+    transform: scale(1.05);
+}
+
+.box-profil {
+    text-align: center;
+    color: rgb(90, 89, 91);
+    margin-top: 50px;
+    align-content: center;
+}
+
+.box-biodata {
+    width: 300px;
+    height: 320px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 140px;
+    margin-left: 550px;
+    padding: 30px 60px;
+    text-decoration: none;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ;
+}
+
+.box-biodata:hover {
+    transform: scale(1.05);
+    border: 2px dashed #8161bc;
+}
+
+.foto-profil {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px #ffffff;
+    transition: border-color 0.3s;
+}
+
+.foto-profil:hover {
+    border:2px dashed #8161bc;
+}
+
+.biodata ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.biodata li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 5px;
+    transition: color 0.1s;
+    font-weight: 500;
+}
+
+/* Pseudo-class untuk hover efek pada list item */
+.biodata li:hover {
+    color: #8161bc;
+}
+
+/* Pseudo-class untuk mengatur tampilan ketika list item pertama (nama) mendapat fokus */
+.biodata li:first-child:hover {
+    color: #8161bc;
+}
+
+.biodata strong {
+    color: #333;
+    font-weight: bold;
+}
+
+.box-kontak {
+    text-align: center;
+    color: rgb(90, 89, 91);
+    margin-top: 50px;
+    align-content: center;
+}
+
+#wa {
+    margin-left: 15px;
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+#ig {
+    margin-left: 25px;
+    width: 150px;
+}
+
+#in {
+    margin-left: 20px;
+    width: 150px;
+}
+
+.footer {
+    background-color: grey;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+    padding: 3px;
+    margin: 50px auto 0px;
+    text-align: center;
+}
+.footer  p {
+    margin-top: 10px;
+}
+
+[src$=".png"]{
+    transition: transform 0.15s;
+}
+[src$=".png"]:hover{
+    transform: scale(1.1);
+}
+
+[src$=".jpg"] {
+    height: 150px;
+    width: 150px;
+}
